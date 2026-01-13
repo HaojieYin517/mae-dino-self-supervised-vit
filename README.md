@@ -31,6 +31,12 @@ See the report and in-folder notes for example commands and expected inputs/outp
 ## Reference
 Project report: `results/CVPR_2026_Deep_Learning_Report_final.pdf`
 
+## Experimental modifications
+To investigate training stagnation observed during DINOv1 self-distillation, I implemented
+a selective checkpoint-based reinitialization mechanism that allows restarting training from
+saved student/teacher weights **without restoring optimizer or loss state**. This enabled
+exploration of alternative optimization trajectories from identical representations when performance stalled.
+
 ## Acknowledgements
 This work builds on established self-supervised learning methods:
 - MAE (He et al.)

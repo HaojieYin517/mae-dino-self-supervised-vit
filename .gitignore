@@ -1,0 +1,11 @@
+@"
+# checkpoints / weights
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# large logs/artifacts (optional)
+*.tar
+*.zip
+"@ | Out-File -Append -Encoding utf8 .gitignore

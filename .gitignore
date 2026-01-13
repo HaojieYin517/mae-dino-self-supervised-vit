@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# MAE training outputs
+output_dir/
+mae_base_patch8/
+*.pth
+*.pt
+*.ckpt
+
+# RunPod / training logs
+nohup.out
+*.log
+
+# Temp files
+*.DS_Store
+
